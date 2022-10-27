@@ -18,9 +18,3 @@ Then("I see search results containing the word bank", () => {
     cy.get('a')
 });
 
-Then("I see search results containing the word bank", () => {
-    cy.url().should("contain", "/search.html?searchTerm=bank")
-    cy.get('h2').should('contain.text', 'Search Results:')
-    cy.get('span').should('contain.text', 'Download WebInspect')
-    cy.get('a')
-});
